@@ -1,0 +1,22 @@
+/* This example demostrate the background(image & linear-gradient) by styling a banner*/
+.container-1 {
+  padding: 50px;
+  background-image: linear-gradient(
+    rgba(3, 88, 87, 0.936),
+    rgba(163, 151, 151, 0.5)
+  );
+}
+.container-2 {
+  padding: 100px;
+  background-image: linear-gradient(
+      rgba(163, 151, 151, 0.5),
+      rgba(163, 151, 151, 0.5)
+    ),
+    url(images/image3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1 {
+  text-align: center;
+}
