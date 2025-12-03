@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(251, 239, 239)a;
+  text-align: center;
+}
+
+.box {
+  background: rgb(249, 223, 223);
+  padding: 20px;
+  width: 300px;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 8px;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.btn {
+  display: block;
+  background: rgb(245, 175, 175);
+  color: rgb(249, 223, 223);
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+button.btn {
+  border: none;
+  width: 100%;
+}
