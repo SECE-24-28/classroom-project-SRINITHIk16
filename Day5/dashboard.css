@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-link {
+    color: white;
+    padding: 0.7rem;
+    font-size: 14px;
+}
+.nav-link:hover {
+    color: #e9d5ff;
+}
+
+.user-icon {
+    width: 34px;
+    height: 34px;
+    background: linear-gradient(to right, #a855f7, #ec4899);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 150px;
+    border-radius: 10px;
+}
+.dropdown-item {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.recharge-btn {
+    background: linear-gradient(to right, #9333ea, #ec4899);
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: white;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 16px;
+    transition: transform .3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card-label {
+    color: #d1d5db;
+}
+.card-value {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+
+.quick-btn {
+    padding: 12px 24px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 500;
+}
+
+.quick-btn.purple { background: linear-gradient(to right, #9333ea, #ec4899); }
+.quick-btn.blue   { background: linear-gradient(to right, #3b82f6, #06b6d4); }
+.quick-btn.green  { background: linear-gradient(to right, #10b981, #059669); }
+
+.custom-btn {
+    padding: 12px 24px;
+    border-radius: 12px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.loading-box, .error-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    border-top: 3px solid #a855f7;
+    border-bottom: 3px solid #a855f7;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: auto;
+    margin-bottom: 10px;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.retry-btn {
+    background: #7c3aed;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.operator-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Operator Colors */
+.airtel { background: rgba(230,0,0,0.2); color:#ff6b6b; }
+.jio { background: rgba(0,102,204,0.2); color:#4dabf7; }
+.vi { background: rgba(255,204,0,0.2); color:#ffd43b; }
+.bsnl { background: rgba(255,102,0,0.2); color:#ffa94d; }
+.mtnl { background: rgba(128,0,128,0.2); color:#da77f2; }
+.other { background: rgba(100,100,100,0.2); color:#ced4da; }

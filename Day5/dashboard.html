@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | SwiftRecharge</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body class="relative min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
+
+  <!-- Navigation -->
+  <nav class="glass-effect sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <span class="text-2xl font-bold gradient-text">SwiftRecharge</span>
+
+          <div class="hidden md:block ml-10">
+            <a href="#dashboard" class="nav-link">Dashboard</a>
+            <a href="#plans" class="nav-link">Plans</a>
+            <a href="#history" class="nav-link">History</a>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <div class="relative group">
+            <button class="flex items-center text-white">
+              <div class="user-icon">
+                <span id="userInitial" class="font-bold">U</span>
+              </div>
+              <span id="userName" class="hidden md:inline">User</span>
+            </button>
+
+            <div class="dropdown glass-effect hidden group-hover:block">
+              <a href="index.html" onclick="logout()" class="dropdown-item">Logout</a>
+            </div>
+          </div>
+
+          <a href="recharge.html" class="recharge-btn">
+            New Recharge
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="mb-12">
+
+      <div class="glass-effect rounded-2xl p-6 mb-8">
+        <h1 class="dash-title">
+          Welcome back,
+          <span id="welcomeName" class="gradient-text">User</span>!
+        </h1>
+        <p class="text-gray-300">Here’s your recharge dashboard</p>
+      </div>
+
+      <!-- Stats Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+
+        <div class="glass-effect card">
+          <p class="card-label">Total Recharges</p>
+          <p class="card-value">₹<span id="totalSpent">0</span></p>
+        </div>
+
+        <div class="glass-effect card">
+          <p class="card-label">Recharge Count</p>
+          <p class="card-value"><span id="rechargeCount">0</span></p>
+        </div>
+      </div>
+
+      <!-- Quick Recharge -->
+      <div class="glass-effect rounded-2xl p-6 mb-8">
+        <h2 class="section-title">Quick Recharge</h2>
+
+        <div class="flex flex-wrap gap-4">
+          <button class="quick-btn purple" onclick="quickRecharge(299)">₹299</button>
+          <button class="quick-btn blue" onclick="quickRecharge(399)">₹399</button>
+          <button class="quick-btn green" onclick="quickRecharge(599)">₹599</button>
+
+          <a href="recharge.html" class="custom-btn">Custom Amount</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="mb-12">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="section-title">Available Recharge Plans</h2>
+        <button class="filter-btn active" data-operator="all">All Plans</button>
+      </div>
+
+      <!-- Loading -->
+      <div id="loadingPlans" class="loading-box">
+        <div class="loader"></div>
+        <p class="text-gray-300">Loading recharge plans...</p>
+      </div>
+
+      <!-- Plans -->
+      <div id="plansContainer"
+           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 hidden">
+      </div>
+
+      <!-- Error -->
+      <div id="errorPlans" class="error-box hidden">
+        <p class="text-red-300 mb-2">Failed to load recharge plans</p>
+        <button onclick="loadPlansFromAPI()" class="retry-btn">Retry</button>
+      </div>
+    </section>
+
+    <!-- History -->
+    <section id="history">
+      <div class="glass-effect rounded-2xl p-6">
+        <h2 class="section-title">Recent Recharges</h2>
+        <div id="recentRecharges" class="space-y-4"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>

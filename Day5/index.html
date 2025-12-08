@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SwiftRecharge | Instant Mobile Recharge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body class="relative h-screen overflow-hidden">
+
+  <!-- Animated Background -->
+  <div class="absolute inset-0 bg-image"></div>
+  <div class="absolute inset-0 bg-overlay"></div>
+
+  <!-- Animated Circles -->
+  <div class="circle circle1"></div>
+  <div class="circle circle2"></div>
+
+  <!-- Main Content -->
+  <div class="relative z-10 h-full flex flex-col items-center justify-center px-4">
+    <div class="text-center max-w-4xl">
+      
+      <h1 class="main-title">
+        Recharge <span class="gradient-text">Instantly</span>
+      </h1>
+
+      <p class="subtitle">
+        Fast and Secure
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="signup.html" class="btn-primary">Sign Up</a>
+        <a href="login.html" class="btn-secondary">Already a User? Login</a>
+      </div>
+
+      <!-- Supported Operators -->
+      <div class="mt-16">
+        <div class="flex flex-wrap justify-center gap-6">
+          <span class="operator airtel">Airtel</span>
+          <span class="operator jio">Jio</span>
+          <span class="operator vi">Vi</span>
+          <span class="operator bsnl">BSNL</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
