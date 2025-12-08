@@ -1,0 +1,117 @@
+/* Font */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Text Shadow */
+.text-shadow {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-image {
+  background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-overlay {
+  background: linear-gradient(to bottom right, rgba(76, 29, 149, 0.8), rgba(30, 58, 138, 0.7), rgba(49, 46, 129, 0.8));
+}
+
+/* Animated Circles */
+.circle {
+  position: absolute;
+  border-radius: 9999px;
+  mix-blend-mode: multiply;
+  filter: blur(40px);
+  opacity: 0.3;
+  animation: pulse 3s infinite alternate;
+}
+
+.circle1 {
+  top: 25%;
+  left: 25%;
+  width: 16rem;
+  height: 16rem;
+  background: #a855f7;
+}
+
+.circle2 {
+  bottom: 25%;
+  right: 25%;
+  width: 18rem;
+  height: 18rem;
+  background: #3b82f6;
+  animation-delay: 1s;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.2); }
+}
+
+/* Main Title */
+.main-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #e5e7eb;
+  margin-bottom: 2.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #7c3aed, #2563eb);
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(to right, #6d28d9, #1d4ed8);
+}
+
+.btn-secondary {
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Operator Badges */
+.operator {
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  color: white;
+  font-weight: 500;
+}
+
+.airtel { background: rgba(220, 38, 38, 0.3); }
+.jio { background: rgba(37, 99, 235, 0.3); }
+.vi { background: rgba(234, 179, 8, 0.3); }
+.bsnl { background: rgba(249, 115, 22, 0.3); }

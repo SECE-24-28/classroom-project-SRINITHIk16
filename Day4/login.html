@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | SwiftRecharge</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="login.css">
+
+</head>
+<body class="relative min-h-screen">
+
+  <!-- Background -->
+  <div class="absolute inset-0 gradient-bg"></div>
+  <div class="absolute inset-0 bg-overlay"></div>
+
+  <!-- Animated Particles -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="relative z-10 min-h-screen flex items-center justify-center p-4">
+    <div class="glass-effect rounded-3xl shadow-2xl w-full max-w-md overflow-hidden">
+
+      <!-- Header -->
+      <div class="header-section">
+        <div class="icon-box">
+          <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+          </svg>
+        </div>
+        <h1 class="title">Welcome Back</h1>
+        <p class="subtitle">Login to your SwiftRecharge account</p>
+      </div>
+
+      <!-- Form -->
+      <div class="p-8">
+        <form id="loginForm">
+          <div class="space-y-6">
+
+            <div>
+              <label class="label">Email or Mobile</label>
+              <input type="text" id="username" class="input" placeholder="Enter email or mobile number" required>
+            </div>
+
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label class="label">Password</label>
+                <a href="#" class="forgot">Forgot password?</a>
+              </div>
+              <input type="password" id="password" class="input" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="login-btn">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
+              </svg>
+              Sign In
+            </button>
+
+          </div>
+        </form>
+
+        <div class="mt-8 text-center">
+          <p class="text-gray-300">Don't have an account?</p>
+          <a href="signup.html" class="signup-link">Create new account</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
